@@ -32,7 +32,7 @@
         packages: [
           {
             name: "app",
-            location: "./",
+            location: document.location.pathname.replace(/\/[^/]+$/, ""),
             main: "index/main.ca98559d5fd878d3b8f3"
           }
         ]
