@@ -1,41 +1,102 @@
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html> -->
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="mobile-web-app-capable" content="yes">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
 
-  <script type="text/javascript" src="js/zip.js/zip.js"></script>
-  <script type="text/javascript" src="js/zip.js/zip-ext.js"></script>
-  <script type="text/javascript" src="js/zip.js/HttpProgressReader.js"></script>
-  <script type="text/javascript" src="https://apps.sketchfab.com/web-importer/sketchfab-importer.js"></script>
+    <script type="text/javascript" src="js/zip.js/zip.js"></script>
+    <script type="text/javascript" src="js/zip.js/zip-ext.js"></script>
+    <script type="text/javascript" src="js/zip.js/HttpProgressReader.js"></script>
+    <script type="text/javascript" src="https://apps.sketchfab.com/web-importer/sketchfab-importer.js"></script>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" /> -->
 
-  <script>
-    zip.workerScriptsPath = 'js/zip.js/';
-  </script>
+    <script>
+      zip.workerScriptsPath = 'js/zip.js/';
+    </script>
 
-  <link rel="stylesheet" href="https://jsdev.arcgis.com/4.15/esri/css/main.css">
-  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/css/main.css">
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
 
-  <script src="https://jsdev.arcgis.com/4.15/"></script>
+    
 
-  <link rel="stylesheet" href="./index.css" />
+    <link href="./index.css" rel="stylesheet">
 
-  <title>Participatory Planning</title>
-</head>
-<body id="app">
-  <noscript>JavaScript is required in order to use this app </noscript>
+    <meta charset="utf-8" />
+    <title>Participatory Planning</title>
 
-  <script>
-    require({
-      packages: [{
-        name: "app",
-        location: document.location.pathname.replace(/\/[^/]+$/, "")
-      }]
-    }, ["app/index"], function() {
-    });
-  </script>
-</body>
+    <script>
+      window.dojoConfig = {
+        packages: [
+          {
+            name: "app",
+            location: "/",
+            main: "index/main.ca98559d5fd878d3b8f3"
+          }
+        ]
+      };
+    </script>
+  </head>
+  <body id="app">
+
+    <noscript>JavaScript is required in order to use this app </noscript>
+
+    <!-- {
+  "tags": {
+    "headTags": [
+      {
+        "tagName": "script",
+        "voidTag": false,
+        "meta": {
+          "plugin": "html-webpack-plugin"
+        },
+        "attributes": {
+          "defer": true,
+          "src": "index/main.ca98559d5fd878d3b8f3.js"
+        }
+      }
+    ],
+    "bodyTags": []
+  },
+  "files": {
+    "publicPath": "",
+    "js": [
+      "index/main.ca98559d5fd878d3b8f3.js"
+    ],
+    "css": []
+  },
+  "options": {
+    "template": "/Users/fivaa/src/esri/participatory-planning/node_modules/html-webpack-plugin/lib/loader.js!/Users/fivaa/src/esri/participatory-planning/src/layout.js",
+    "templateContent": false,
+    "filename": "index.html",
+    "publicPath": "auto",
+    "hash": false,
+    "inject": false,
+    "scriptLoading": "defer",
+    "compile": true,
+    "favicon": false,
+    "minify": "auto",
+    "cache": true,
+    "showErrors": true,
+    "chunks": [
+      "index"
+    ],
+    "excludeChunks": [],
+    "chunksSortMode": "none",
+    "meta": {},
+    "base": false,
+    "title": "Participatory Planning",
+    "xhtml": false,
+    "entry": "index"
+  }
+} -->
+
+    <script src="https://js.arcgis.com/4.20/"></script>
+
+    <script>
+      require(["app"], function() {});
+    </script>
+  </body>
 </html>
