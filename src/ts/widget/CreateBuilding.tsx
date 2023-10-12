@@ -43,7 +43,7 @@ export default class CreateBuilding extends DrawWidget {
     return (
       <div>
         <div class="menu">
-          { [3, 5, 10].map((stories) => (
+          { [1, 2, 3].map((stories) => (
             <div class="menu-item">
               <button
                 class={stories === this.stories ? active : inactive}
