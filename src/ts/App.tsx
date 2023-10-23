@@ -227,9 +227,9 @@ export default class App extends WidgetBase {
               </figure>
               <div class="card-content">
                 <h4 class="trailer-half">Participatory Planning</h4>
+                    <p class="font-size--1 trailer-half">Create changes to the planning area by creating a new plan and view these changes by submitting the plan</p>
                 <p class="font-size--1 trailer-half">
                   <ul>
-                    <p>Create changes to the planning area by creating a new plan and view these changes by submitting the plan</p>
                     <li>When creating shapes, either double click or press <code>C</code> to complete.</li>
                     <li>Press <code>Del</code> or <code>Backspace</code> to remove a selected object.</li>
                     <li>Press <code>Escape</code> to revert a current editing.</li>
