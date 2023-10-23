@@ -1,5 +1,8 @@
 # Participatory Planning
 
+This interactive 3D web appliacation has been adapted from the app develped by https://github.com/arnofiva available here (https://github.com/Esri/participatory-planning) and adapted for our planning area of the Cromarty Firth.  All information provided below are applicable to this application.
+
+
 An interactive 3D web application enabling citizens to engage in urban planning, using the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/). This is a non-commercial demo application made by the Esri R&D Center Zurich. It is intended for presentations or as a starting point for new projects.
 
 [![screenshot](./screenshot.png)](https://esri.github.io/participatory-planning)
